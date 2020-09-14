@@ -36,6 +36,7 @@ The train.py script trains following models and generates benchmarks<br>
 | <b>AdaBoostRegressor |<b>0.1684 |<b>34.1281 | 
 | GradientBoostingRegressor | 0.1963|7.9679 | 
 
+
 ## Bonus! - Inference API slash Web App
 You can run the API directly into your browser to predict housing housing price.<br>
 Go find sample example features to predict on homepage.<br>
@@ -48,3 +49,6 @@ $python app.py
 </code><br><br>
 Open [http://localhost:5000/](http://localhost:5000/) on your local machine.<br><br>
 API in action<br>
+![image](https://github.com/sonwanesuresh95/california_housing_benchmarks/blob/master/root.png "homepage")
+
+![image](https://github.com/sonwanesuresh95/california_housing_benchmarks/blob/master/predict.png "predict")
