@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>California Housing Price Prediction</title>
+</head>
+<body>
+<h1 align="center">This is an API to predict housing prices in California</h1>
+<p align="center">In backend lies Adaboost Regression model, trained on <b><a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html#sklearn.datasets.fetch_california_housing">California Housing Dataset</a></b></p>
+<br>
+<p align="center">These are 5 examples for prediction</p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>longitude</th>
+      <th>latitude</th>
+      <th>housing_median_age</th>
+      <th>total_rooms</th>
+      <th>total_bedrooms</th>
+      <th>population</th>
+      <th>households</th>
+      <th>median_income</th>
+      <th>INLAND</th>
+      <th>ISLAND</th>
+      <th>NEAR BAY</th>
+      <th>NEAR OCEAN</th>
+      <th>median_house_value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-122.14</td>
+      <td>37.69</td>
+      <td>37.0</td>
+      <td>2141.0</td>
+      <td>535.0</td>
+      <td>1093.0</td>
+      <td>555.0</td>
+      <td>2.9958</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>178400.0</td>
+    </tr>
+    <tr>
+      <td>-115.55</td>
+      <td>32.98</td>
+      <td>33.0</td>
+      <td>2266.0</td>
+      <td>365.0</td>
+      <td>952.0</td>
+      <td>360.0</td>
+      <td>5.4349</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>143000.0</td>
+    </tr>
+    <tr>
+      <td>-117.10</td>
+      <td>32.74</td>
+      <td>14.0</td>
+      <td>2361.0</td>
+      <td>601.0</td>
+      <td>1831.0</td>
+      <td>526.0</td>
+      <td>1.6102</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>93400.0</td>
+    </tr>
+    <tr>
+      <td>-117.79</td>
+      <td>34.11</td>
+      <td>18.0</td>
+      <td>3814.0</td>
+      <td>721.0</td>
+      <td>1881.0</td>
+      <td>692.0</td>
+      <td>4.4722</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>215600.0</td>
+    </tr>
+    <tr>
+      <td>-120.02</td>
+      <td>38.76</td>
+      <td>15.0</td>
+      <td>3142.0</td>
+      <td>618.0</td>
+      <td>725.0</td>
+      <td>285.0</td>
+      <td>4.3333</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>121400.0</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<p align="center">Predict Housing price for above examples</p>
+<form action="/predict" method="post">
+    <table align="center">
+        <tr><td>
+        <input type="radio" id="example1" name="example" value="example1">
+            <label for="example1">Example 1</label><br></td>
+        <td><input type="radio" id="example2" name="example" value="example2">
+            <label for="example2">Example 2</label><br></td>
+        <td><input type="radio" id="example3" name="example" value="example3">
+            <label for="example3">Example 3</label></td>
+        <td><input type="radio" id="example4" name="example" value="example4">
+            <label for="example4">Example 4</label></td>
+        <td><input type="radio" id="example5" name="example" value="example5">
+            <label for="example5">Example 5</label></td>
+            <td>
+            &nbsp&nbsp&nbsp&nbsp&nbsp</td>
+            <td>
+            <input type="submit" value="Predict"></td>
+        </tr>
+    </table>
+</form>
+<p align="center">{{message}}</p>
+<br><br>
+<p align="center">For more information contact sonwanesuresh95@gmail.com</p>
+<p align="center"><a href="https://www.github.com/sonwanesuresh95">Github</a>
+    <a href="https://www.linkedin.com/in/suresh-sonwane-4ba712101">Linkedin</a></p>
+</body>
+</html>
