@@ -49,6 +49,7 @@ $python app.py
 </code><br><br>
 Open [http://localhost:5000/](http://localhost:5000/) on your local machine.<br><br>
 API in action<br>
-![image](https://github.com/sonwanesuresh95/california_housing_benchmarks/blob/master/root.png "homepage")
 
-![image](https://github.com/sonwanesuresh95/california_housing_benchmarks/blob/master/predict.png "predict")
+![](https://github.com/sonwanesuresh95/california_housing_benchmarks/blob/master/prediction%20api.gif "predict1")
+
+![image](https://github.com/sonwanesuresh95/california_housing_benchmarks/blob/master/predict.png "predict2")
